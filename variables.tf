@@ -12,13 +12,13 @@ variable "project_name" {
 
 variable "db_user" {
   description = "User for RDS Database instance"
-  default     = "test"
+  default     = "usertest"
   type        = string
 }
 
 variable "db_password" {
   description = "Password for RDS Database instance"
-  default     = "54321"
+  default     = "987654321"
   type        = string
 }
 

@@ -4,7 +4,7 @@ resource "aws_db_instance" "postgres" {
   storage_type           = "gp2"
   engine                 = "postgres"
   instance_class         = "db.t3.micro"
-  db_name                = "${var.project_name}-db"
+  db_name                = "${var.project_name}db"
   username               = var.db_user
   password               = var.db_password
   vpc_security_group_ids = [aws_security_group.rds_sg.id]
